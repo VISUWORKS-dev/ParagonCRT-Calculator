@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRT Parameter Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>CRT Parameter Calculator</h1>
+    </header>
+    <main>
+        <form onsubmit="event.preventDefault(); predictResults();">
+
+            <div class="input-container">
+                <label for="AR_Sph">AR_Sph (D):</label>
+                <input type="number" id="AR_Sph" value="-1.5" step="0.25" required>
+            </div>
+            <div class="input-container">
+                <label for="AR_Cyl">AR_Cyl (D):</label>
+                <input type="number" id="AR_Cyl" value="0" step="0.25" required>
+            </div>
+            <div class="input-container">
+                <label for="MR_Sph">MR_Sph (D):</label>
+                <input type="number" id="MR_Sph" value="-1.5" step="0.25" required>
+            </div>
+            <div class="input-container">
+                    <label for="MR_Cyl">MR_Cyl (D):</label>
+                    <input type="number" id="MR_Cyl" value="0" step="0.25" required>
+            </div>
+            <div class="input-container">
+                <label for="K1">K1 (D):</label>
+                <input type="number" id="K1" value="43" step="0.25" required>
+            </div>
+            <div class="input-container">
+                <label for="K2">K2 (D):</label>
+                <input type="number" id="K2" value="44" step="0.25" required>
+            </div>
+            <div class="input-container">
+                <label for="WTW">WTW (mm):</label>
+                <input type="number" id="WTW" value="12.5" step="0.01" required>
+            </div>
+            <div class="input-container">
+                <label for="PS">Pupil Size (mm):</label>
+                <input type="number" id="PS" value="4.00" step="0.01" required>
+            </div>
+            <div class="input-container">
+                <label for="ACD">ACD (mm):</label>
+                <input type="number" id="ACD" value="3.70" step="0.01" required>
+            </div>
+            <div class="input-container">
+                <label for="AL">AL (mm):</label>
+                <input type="number" id="AL" value="24" step="0.01" required>
+            </div>
+            <div class="input-container">
+                <label for="CCT">CCT (microns):</label>
+                <input type="number" id="CCT" value="580" step="1" required>
+            </div>
+            <div class="input-container">
+                <label for="Ecc">Ecc:</label>
+                <input type="number" id="Ecc" value="0.45" step="0.01" required>
+            </div>
+            <div class="input-container">
+                <label for="fEcc">Flat Ecc:</label>
+                <input type="number" id="fEcc" value="0.40" step="0.01" required>
+            </div>
+            <div class="input-container">
+                <label for="age">Age:</label>
+                <input type="number" id="age" value="10" step="1" required>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div class="results">
+            <p id="toricResult"></p>
+            <p id="oadResult"></p>
+            <p id="bcResult"></p>
+            <p id="rzd1Result"></p>
+            <p id="rzd2Result"></p>
+            <p id="lzaResult"></p>
+            <p id="lsResult"></p>
+            <p id="lsCalc"></p>
+        </div>
+    </main>
+</body>
+    <script src="script.js"></script>
+</html>
