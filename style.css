@@ -78,3 +78,16 @@ p {
     margin: 0 0 10px;
     font-size: 16px;
 }
+
+footer {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    text-align: center;
+}
+  
+.logo {
+    width: 193px;
+    height: 105px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
