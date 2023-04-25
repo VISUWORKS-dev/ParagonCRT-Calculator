@@ -86,6 +86,7 @@ footer {
 }
   
 .logo {
+    max-width: 100%;
     width: 193px;
     height: 105px;
     margin-right: 10px;
